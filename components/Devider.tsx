@@ -2,7 +2,12 @@ import React from 'react'
 
 function Devider() {
   return (
-    <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="444"
+      height="16"
+      xmlns="http://www.w3.org/2000/svg"
+      className="mx-auto"
+    >
       <g fill="none" fillRule="evenodd">
         <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
         <g transform="translate(212)" fill="#CEE3E9">

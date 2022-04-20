@@ -32,17 +32,24 @@ export const Home: NextPage = () => {
         />
       </Head>
 
-      <h1 className="text-neon">ADVICE #{adviceId}</h1>
-      <h1 className="text-adviceColor">{advice}</h1>
+      <div className="mx-auto w-[90%] pt-[8rem] md:w-[30%]">
+        <div className="rounded-xl bg-cardBg py-10 px-6 text-center">
+          <h1 className="mb-7 text-center tracking-widest text-neon">
+            ADVICE #{adviceId}
+          </h1>
+          <div className="md:px-10">
+            <h1 className="mb-7 text-2xl text-adviceColor">{advice}</h1>
+          </div>
 
-      <div className="md:hidden">
-        <MobileDevider />
+          <div className="mb-7 md:hidden">
+            <MobileDevider />
+          </div>
+          <div className="mb-2 hidden md:inline">
+            <Devider />
+          </div>
+          <NewAdviceButton fetchAdvice={fetchAdvice} />
+        </div>
       </div>
-      <div className="hidden md:inline">
-        <Devider />
-      </div>
-
-      <NewAdviceButton fetchAdvice={fetchAdvice} />
     </div>
   )
 }
